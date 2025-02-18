@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Seda Scaduto</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,600'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+      <style>
+
+
+
+        .letters{
+                color: whitesmoke;
+                font-size: 10vw;
+            }
+
+            .name{
+                background-color: transparent;
+                text-align: center;
+                margin-top: 350px;
+                margin-bottom: 300px;
+                margin-right: 50px;
+                margin-left: 50px;
+                
+            }
+            .name1{
+                background-color: transparent;
+                
+                
+                
+                
+                font-weight: 900;
+                margin-top: 100px;
+                margin-bottom: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .art{
+                color: whitesmoke;
+                font-size: 10vw;
+                text-align: center;
+                
+                
+            }
+
+            .art1{
+              color: whitesmoke;
+              font-size: 10vw;
+              text-align: center;
+              margin-top: 300px;
+            }
+
+            video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                }
+
+
+
+
+
+
+
+
+
+                .sk-cube-grid {
+                        width: 65px;
+                        height: 65px;
+                        margin: 100px auto;
+                        
+                        }
+
+                .sk-cube-grid .sk-cube {
+                      width: 1vw;
+                      height: 1vw;
+                      background-color: whitesmoke;
+                      float: left;
+                      -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+                          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+                      }
+                      .sk-cube-grid .sk-cube1 {
+                      -webkit-animation-delay: 0.2s;
+                          animation-delay: 0.2s; }
+                      .sk-cube-grid .sk-cube2 {
+                      -webkit-animation-delay: 0.3s;
+                          animation-delay: 0.3s; }
+                      .sk-cube-grid .sk-cube3 {
+                      -webkit-animation-delay: 0.4s;
+                          animation-delay: 0.4s; }
+                      .sk-cube-grid .sk-cube4 {
+                      -webkit-animation-delay: 0.1s;
+                          animation-delay: 0.1s; }
+                      .sk-cube-grid .sk-cube5 {
+                      -webkit-animation-delay: 0.2s;
+                          animation-delay: 0.2s; }
+                      .sk-cube-grid .sk-cube6 {
+                      -webkit-animation-delay: 0.3s;
+                          animation-delay: 0.3s; }
+                      .sk-cube-grid .sk-cube7 {
+                      -webkit-animation-delay: 0s;
+                          animation-delay: 0s; }
+                      .sk-cube-grid .sk-cube8 {
+                      -webkit-animation-delay: 0.1s;
+                          animation-delay: 0.1s; }
+                      .sk-cube-grid .sk-cube9 {
+                      -webkit-animation-delay: 0.2s;
+                          animation-delay: 0.2s; }
+
+                      @-webkit-keyframes sk-cubeGridScaleDelay {
+                      0%, 70%, 100% {
+                        -webkit-transform: scale3D(1, 1, 1);
+                            transform: scale3D(1, 1, 1);
+                      } 35% {
+                        -webkit-transform: scale3D(0, 0, 1);
+                            transform: scale3D(0, 0, 1); 
+                      }
+                      }
+
+                      @keyframes sk-cubeGridScaleDelay {
+                      0%, 70%, 100% {
+                        -webkit-transform: scale3D(1, 1, 1);
+                            transform: scale3D(1, 1, 1);
+                      } 35% {
+                        -webkit-transform: scale3D(0, 0, 1);
+                            transform: scale3D(0, 0, 1);
+                      } 
+                      }
+
+            .gradbox{
+              background-color: whitesmoke;
+            }
+
+            .name2{
+              background-color: transparent;
+              
+              bottom: -103px;
+              top: 300px;
+            }
+      </style>
+
+  
+</head>
+
+<body>
+
+
+<div>
+
+  <video autoplay muted loop>
+		<source src="movee.mp4" type="video/mp4">
+	  </video>
+
+
+
+
+    <div class="name">
+      <h1 class="ml11">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">Seda Scaduto</span>
+        </span>
+        
+        </h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+        <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+        </div>
+  
+    </div>
+
+
+    <script>
+      // Wrap every letter in a span 
+      var textWrapper = document.querySelector('.ml11 .letters');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+  
+      anime.timeline({loop: true})
+      .add({
+        targets: '.ml11 .line',
+        scaleY: [0,1],
+        opacity: [0.5,1],
+        easing: "easeOutExpo",
+        duration: 700
+      })
+      .add({
+        targets: '.ml11 .line',
+        translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+        easing: "easeOutExpo",
+        duration: 700,
+        delay: 100
+      }).add({
+        targets: '.ml11 .letter',
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=775',
+        delay: (el, i) => 34 * (i+1)
+      }).add({
+        targets: '.ml11',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 20000
+      });
+    </script>
+
+
+
+<div class="name1">
+  <h1 class="art">Artist</h1>
+  <h1 class="art">Investor</h1>
+  <h1 class="art">Entrepreneur</h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</div>
+
+<div class="name2">
+  <h1 class="art1">Gallery</h1>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gradbox">
+  <article class='gallery'>
+  <a class='gallery-link' href='https://unsplash.it/1000/1400?image=1081'>
+    <figure class='gallery-image'>
+      <img height='1400' src='https://unsplash.it/1000/1400?image=1081' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1200/1600?image=1014'>
+    <figure class='gallery-image'>
+      <img height='1600' src='https://unsplash.it/1200/1600?image=1014' width='1200'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1600/1200?image=267'>
+    <figure class='gallery-image'>
+      <img height='1200' src='https://unsplash.it/1600/1200?image=267' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1600/1200?image=266'>
+    <figure class='gallery-image'>
+      <img height='1200' src='https://unsplash.it/1600/1200?image=266' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1600/1400?image=634'>
+    <figure class='gallery-image'>
+      <img height='1400' src='https://unsplash.it/1600/1400?image=634' width='1600'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1400/1600?image=923'>
+    <figure class='gallery-image'>
+      <img height='1600' src='https://unsplash.it/1400/1600?image=923' width='1400'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1200/1400?image=682'>
+    <figure class='gallery-image'>
+      <img height='1400' src='https://unsplash.it/1200/1400?image=682' width='1200'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1000/1200?image=173'>
+    <figure class='gallery-image'>
+      <img height='1200' src='https://unsplash.it/1000/1200?image=173' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://unsplash.it/1000/1400?image=943'>
+    <figure class='gallery-image'>
+      <img height='1400' src='https://unsplash.it/1000/1400?image=943' width='1000'>
+      <figcaption>Photo caption</figcaption>
+    </figure>
+  </a>
+</article>
+<footer id='footer' role='contentinfo'>
+  <div class='container'>
+    <a class='logo' href='https://codepen.io/collection/XRoxGR' rel='home'>Seda Scaduto</a>
+    <a class='copy' href='https://mobilemarkup.com'>&copy; seda@gmail.com</a>
+  </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='js/xgrmnr.js'></script>
+
+    <script  src="js/index.js"></script>
+
+
+ </div>
+
+</body>
+</html>
